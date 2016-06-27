@@ -12,9 +12,9 @@ numOfHashes = 0
 file = raw_input("Enter the name of the file containing the passwords, "
                  "including the extension. \n >>> ")
 hashedValues = open('output.txt', 'w+')
-with open(file,'r') as f: #Line stolen from Sam.
+with open(file,'r') as f: 
 
-    for lines in f.readlines(): #Line also stolen from Sam.
+    for lines in f.readlines(): 
         print "Hashing ", lines , " now \n"
         hashvalue1 = hashlib.sha1(lines)
         print ("Done with the SHA1 for the current value.")
